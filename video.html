@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Connect</title>
+
+    <!-- Importing Comic Neue font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Settings */
+        body {
+            font-family: 'Comic Neue', cursive;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        /* Styles for the top header */
+        .top-header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-bottom: 5px solid #2980b9;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+
+        /* Styles for the home menu */
+        .home-menu {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            width: 90%;
+            max-width: 600px;
+        }
+
+        /* Home menu item styles */
+        .home-item {
+            background-color: #f9f9f9;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .home-item:hover {
+            background-color: #e9e9e9;
+        }
+
+        .home-title {
+            font-size: 1.5em;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+
+        .home-title a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        .home-title a:hover {
+            color: darkred;
+        }
+
+        .home-subject {
+            margin-top: 5px;
+            color: #777;
+        }
+
+        /* Styling for the navigation bar */
+        .navbar {
+            background-color: #2ecc71;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styling for navigation buttons */
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border-radius: 15px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #27ae60;
+            transform: scale(1.1);
+        }
+
+        /* Styling for the emergency button */
+        .emergency-button {
+            background-color: #e74c3c;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .emergency-button:hover {
+            background-color: #c0392b;
+        }
+
+        /* Styling for user images */
+        .user-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+
+        /* Styling for the active navigation link (Message) */
+        .navbar a.active {
+            background-color: #3498db;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top-header">
+        <h1>Study Connect</h1>
+    </header>
+
+    <section class="home-menu">
+
+        <!-- Emergency button -->
+        <button class="emergency-button" onclick="location.href='emergency.html'">Emergency</button>
+
+        <!-- Home menu items for contacting different individuals -->
+        <div class="home-item">
+            <div style="display: flex; align-items: center;">
+                <img src="tom.jpg" alt="Tom" class="user-image">
+                <div>
+                                   <h3 class="home-title"><a href="discussion1.html">Tom</a></h3>
+                    <p class="home-subject">Have questions related to physics? Reach out to Tom.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="home-item">
+            <div style="display: flex; align-items: center;">
+                <img src="jessy.jpg" alt="Jessy" class="user-image">
+                <div>
+                    <h3 class="home-title"><a href="discussion2.html">Jessy</a></h3>
+                    <p class="home-subject">Need assistance with mathematics? Contact Jessy.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation bar at the bottom -->
+        <nav class="navbar">
+            <a href="message.html" class="active">Message</a>
+            <a href="video.html">Video Forums</a>
+            <a href="ranking.html">Ranking</a>
+            <a href="settings.html">Settings</a>
+        </nav>
+    </section>
+</body>
+
+</html>

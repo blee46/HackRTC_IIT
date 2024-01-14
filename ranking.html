@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking - Study Connect</title>
+
+    <!-- Importing Comic Neue font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Settings */
+        body {
+            font-family: 'Comic Neue', cursive;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Styles for the top header */
+        .top-header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-bottom: 5px solid #2980b9;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+
+        /* Styles for the navigation bar */
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #2ecc71;
+            padding: 15px 0;
+            border-radius: 5px;
+            margin: 20px 10%;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style for navigation buttons */
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #27ae60;
+            transform: scale(1.1);
+        }
+
+        /* Styles for the ranking container */
+        .ranking-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Styles for ranking rows */
+        .ranking-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        /* Styles for ranking items */
+        .ranking-item {
+            background-color: #ffffff;
+            width: 320px; /* Set the desired width */
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-align: left;
+            padding: 15px;
+        }
+
+        .ranking-item img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .ranking-name {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .ranking-score {
+            font-weight: bold;
+            color: #3498db;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top-header">
+        <h1>Study Connect</h1>
+    </header>
+
+    <nav class="navbar">
+        <a href="message.html">Message</a>
+        <a href="video.html">Video</a>
+        <a href="ranking.html" class="active">Ranking</a>
+        <a href="settings.html">Settings</a>
+    </nav>
+
+    <section class="ranking-container">
+        <div class="ranking-row">
+            <!-- Ranking 1 -->
+            <div class="ranking-item">
+                <img src="walter.jpg" alt="John Doe">
+                <div class="ranking-name">
+                    John Doe
+                </div>
+                <div class="ranking-score">
+                    Score: 95
+                </div>
+            </div>
+
+            <!-- Ranking 2 -->
+            <div class="ranking-item">
+                <img src="girl.jpg" alt="Jane Smith">
+                <div class="ranking-name">
+                    Jane Smith
+                </div>
+                <div class="ranking-score">
+                    Score: 89
+                </div>
+            </div>
+        </div>
+
+        <div class="ranking-row">
+            <!-- Ranking 3 -->
+            <div class="ranking-item">
+                <img src="girl2.jpg" alt="Emily Davis">
+                <div class="ranking-name">
+                    Emily Davis
+                </div>
+                <div class="ranking-score">
+                    Score: 78
+                </div>
+            </div>
+
+            <!-- Ranking 4 -->
+            <div class="ranking-item">
+                <img src="tom.jpg" alt="Mark Johnson">
+                <div class="ranking-name">
+                    Mark Johnson
+                </div>
+                <div class="ranking-score">
+                    Score: 72
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
